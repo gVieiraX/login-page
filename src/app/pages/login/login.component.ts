@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
 import { LoginService } from '../../services/login.service';
 import { ToastrService } from 'ngx-toastr';
 
+
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -43,6 +44,6 @@ export class LoginComponent {
     })
   }
   navigate(){
-    this.router.navigate(["/sign-up"])
+    this.router.navigate(["/signup"])
   }
 }
