@@ -1,46 +1,25 @@
-<app-default-login-layout
-    title="Sing in and start today!"
-    primaryBtnText="Singup Now"
-    secondaryBtnText="Login Now"
-    (submit)="submit()"
-    (navigate)="navigate()"
-    [disablePrimaryBtn]="!signupForm.valid"
-    >
+<app-default-login-layout title="Sing in and start today!" primaryBtnText="Singup Now" secondaryBtnText="Login Now"
+    (submit)="submit()" (navigate)="navigate()" [disablePrimaryBtn]="!signupForm.valid">
 
     <form [formGroup]="signupForm">
-      <app-primary-input 
-        formControlName="name"
-        inputName="name" 
-        type="text"
-        label="Your Name"
-        placeholder="Gabriel Vieira">
-        <img src="/assets/svg/Email.svg" alt="">
-    </app-primary-input>
-        
-        <app-primary-input 
-            formControlName="email"
-            inputName="Email" 
-            type="email"
-            label="Email"
+        <app-primary-input formControlName="name" inputName="name" type="text" label="Your Name"
+            placeholder="Gabriel Vieira">
+            <img src="/assets/svg/Email.svg" alt="">
+        </app-primary-input>
+
+        <app-primary-input formControlName="email" inputName="Email" type="email" label="Email"
             placeholder="gabriel@email.com">
             <img src="/assets/svg/Email.svg" alt="">
         </app-primary-input>
 
-        <app-primary-input 
-            formControlName="password"
-            inputName="Password" 
-            type="password"
-            label="Your Password" >
-           <img src="/assets/svg/Password.svg" alt="">
-       </app-primary-input>
+        <app-primary-input formControlName="password" inputName="Password" type="password" label="Your Password">
+            <img src="/assets/svg/Password.svg" alt="">
+        </app-primary-input>
 
-     <app-primary-input 
-        formControlName="passwordConfirm"
-        inputName="passwordConfirm" 
-        type="password"
-        label="Confirm Your Password" >
-       <img src="/assets/svg/Password.svg" alt="">
-   </app-primary-input>
+        <app-primary-input formControlName="passwordConfirm" inputName="passwordConfirm" type="password"
+            label="Confirm Your Password">
+            <img src="/assets/svg/Password.svg" alt="">
+        </app-primary-input>
 
     </form>
 
